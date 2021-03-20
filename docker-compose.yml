@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  s3_analytics:
+    build:
+      context: .
+    image: s3_analytics
+    container_name: s3_analytics
+    tty: true
+    volumes:
+      - ./:/home/docker/s3_analytics_tool
+      - ~/.aws:/home/docker/.aws
