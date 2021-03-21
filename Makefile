@@ -5,4 +5,4 @@ build:
 	docker-compose build --no-cache
 
 test:
-	pylint *.py
+	pylint *.py && python -m unittest
